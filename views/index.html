@@ -5,16 +5,19 @@
     <body>
         <div id="userContainer" class="container"> 
             <h2>User Info</h2>          
-            <b>Set Name: </b> <span data-bind="text: name"></span> <br>
-            <b>Change Name: </b><input type="text" data-bind="value: name, valueUpdate: 'afterkeydown'">
+            <b>Name: </b> <span data-bind="text: name"></span> <br>
+            <b>Age: </b> <span data-bind="text: age"></span> <br>
+            <hr>
+            <b>Change Name: </b><input type="text" data-bind="value: name, valueUpdate: 'afterkeydown'">   <br>         
+            <b>Change Age: </b><input type="text" data-bind="value: age, valueUpdate: 'afterkeydown'">
         </div>
         <br>
         <div id="buildingContainer" class="container">
             <h2>Building Info</h2>
-            <b>Set Building Name </b><span data-bind="text: name"></span> <br>
+            <b>Building Name </b><span data-bind="text: name"></span> <br>   
+            <b>Stories </b><span data-bind="text: stories"></span> <br>         
+            <hr>            
             <b>Change Building Name</b> <input type="text" data-bind="value: name, valueUpdate: 'afterkeydown'"> <br>
-            <hr>
-            <b>Set Stories </b><span data-bind="text: stories"></span> <br>
             <b>Change Stories</b> <input type="text" data-bind="value: stories, valueUpdate: 'afterkeydown'">
         </div>
         <script src="../../common-js/jquery-1.10.2.min.js"></script>
